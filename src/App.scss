@@ -1,0 +1,136 @@
+.card-gallery{
+  width: 100vw;
+  height: 100vh;
+  .nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(28, 80, 224);
+    .select{
+      width: 190px;
+      height: 30px;
+      outline: none;
+      border-radius: 5px;
+      position: absolute;
+      right: 50px;
+      top: 13px;
+      
+    }
+  }
+.card-wrapper{
+  width: 80%;
+ display: flex;
+ flex-wrap: wrap;
+ margin: 0 auto;
+ .card-item{
+  width: 240px;
+  height: max-content;
+  margin: 10px;
+  padding: 5px;;
+  border-radius: 15px;
+  border: 1px solid black;
+  &:hover{
+    background-color: rgb(62,62,62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+  .card-top{
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    position: relative;
+    img{
+      border-radius: 15px;
+      width: 100%;
+      height: 100%;
+    }
+    h6{
+      background-color: blue;
+      color: white;
+      padding: 8px 10px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  button{
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    margin:9px 13px;
+    &:hover{
+      background-color: rgba(233, 78, 39, 0.932);
+    color:  rgb(62,62,62);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+    }
+  }
+  h5{
+    padding: 5px;
+  }
+  h6{
+    padding: 5px;
+  }
+ }
+}
+.analyse{
+  width: 130px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  margin:9px 13px;
+  position: fixed;
+  right: 90px;
+  top: 500px;
+  background-color: rgb(24, 20, 243);
+  color:white;
+  &:hover{
+    background-color: white;
+  color:black;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+  }
+}
+}
+.Modal{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: -80px;
+  right:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+.modal-container{
+    width:300px;
+    height: 330px;
+    background-color: white;
+    position: relative;
+   top:30px;
+   border-radius:15px;
+   &:hover{
+  background-color:  rgb(62, 62, 62);
+  cursor: pointer;
+  color:white;
+  transform: scale(1.03);
+  transition: all 1s ease;
+  }
+  .close{
+    font-size: 30px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    cursor: pointer;
+}
+}
+}
+.readMoreClassName{
+  color:red;
+  border-bottom:1px solid black;
+}
