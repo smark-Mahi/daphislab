@@ -15,7 +15,7 @@ function App() {
     setfilter(data)
     console.log(data)
   }
-  //get all categories
+  //get all products category
   const getallcategory=async()=>{
     const res=await fetch('https://fakestoreapi.com/products/categories')
     const data=await res.json()
@@ -51,16 +51,16 @@ function App() {
  }
  
   return (
-    <div className='card-gallery'>
+  <div className='card-gallery'>
     <nav className='nav'>
-    <select onChange={handlefilter} className='select'>
-      <option selected disabled>select</option>
-      {
-        categoryy.map(item=>(
-        <option value={item}>{item}</option>
-      ))
-      }
-    </select>
+      <select onChange={handlefilter} className='select'>
+        <option selected disabled>select</option>
+        {
+          categoryy.map(item=>(
+          <option value={item}>{item}</option>
+        ))
+        }
+      </select>
     </nav>
     <div className="card-wrapper">
     {
@@ -72,7 +72,7 @@ function App() {
     <button className='analyse' onClick={()=>{setopen(true)}}>Analyse</button>
     </div>
     {open && <Piechart chartData={chartData} setopen={setopen}/>}
-    </div>
+  </div>
   );
 }
 

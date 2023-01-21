@@ -7,13 +7,12 @@ const Piechart = ({chartData,setopen}) => {
 
   return (
     <div className='Modal'>
-     <span onClick={()=>{setopen(false)}} className='close'>x</span>
-     <div className='modal-container'>
-     <span onClick={()=>{setopen(false)}} className='close'>x</span>
-     <div style={{width:'350px',height:'300px'}}>
-      <Pie data={chartData}/>
+      <div className='modal-container'>
+        <span onClick={()=>{setopen(false)}} className='close'>x</span>
+        <div style={{width:'390px',height:'330px'}}>
+          <Pie data={chartData}/>
+        </div>
       </div>
-     </div>
     </div>
   )
 }
