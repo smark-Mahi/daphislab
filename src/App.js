@@ -7,6 +7,7 @@ function App() {
   const [categoryy,setallcategory] = useState([])
   const [open,setopen]=useState(false)
    const [fillter,setfilter]=useState([])
+   
    //get all products
   const getdata=async()=>{
     const res=await fetch('https://fakestoreapi.com/products')
